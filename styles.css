@@ -648,8 +648,13 @@ h2 em {
   }
 
   .ptin-footer .about-stamp {
-    width: 125px;
-    height: 125px;
+    width: 105px;
+    height: 105px;
+    font-size: 9px;
+  }
+
+   .ptin-footer .about-stamp strong {
+    font-size: 16px;
   }
 
   .ptin-logo {
