@@ -494,10 +494,6 @@ h2 em {
   line-height: 1.6;
 }
 
-.reach-action > p:first-of-type {
-  font-size: 13px;
-  text-align: center;
-}
 
 .reach-action .payment-note {
   margin-top: 29px;
@@ -547,10 +543,8 @@ h2 em {
 }
 
 .ptin-logo {
-  flex: 0 0 60%;
+  flex: 0 0 30%;
   display: block;
-  width: 30%;
-  max-width: 40%;
   height: auto;
 }
 
@@ -702,4 +696,16 @@ h2 em {
     opacity: 1;
     transform: none;
   }
+}
+
+.email-fallback {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: rgba(248, 244, 236, 0.72);
+  text-align: center;
+}
+
+.contact-alt {
+  font-size: 13px;
+  text-align: center;
 }

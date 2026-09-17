@@ -1,6 +1,6 @@
 # Build Project 1 — Prompt Log
 
-Evidence of the thinking behind "Just Doing the Books." Kendra reviewed/directed every step below; this log is for the "log every prompt" requirement. Organized by phase since the build moved between two tools (Claude, then Replit).
+Evidence of the thinking behind "Just Doing the Books." I reviewed/directed every step below; this log is for the "log every prompt" requirement. Organized by phase since the build moved between two tools (Claude, then Replit, then Claude again).
 
 ---
 
@@ -112,3 +112,5 @@ When Kendra asked Replit for the downloadable file package, it included more tha
 
 ## Also worth knowing (a caveat, not a caught mistake)
 The email CTA button uses a `mailto:` link, which only opens something if the visitor's device has a default email app configured — on some phones/browsers with none set up, clicking it does nothing and gives no error. Worth testing on real devices, or deciding it's an acceptable tradeoff.
+
+**To address this possible issue** I tested the site on full screen. I will deploy to pages and then test on phone size capablities. I also added a backup default note so the email contact info doesn't get lost in case the `mailto:` fails.

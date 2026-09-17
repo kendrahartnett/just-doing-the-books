@@ -27,3 +27,15 @@ const revealObserver = new IntersectionObserver(
 );
 // Observe each reveal item with the IntersectionObserver 
 revealItems.forEach((item) => revealObserver.observe(item));
+
+
+// Show a fallback message after the email button is clicked, in case
+// the visitor's device has no email app to open the mailto: link.
+const emailButton = document.getElementById("email-cta");
+const emailFallback = document.getElementById("email-fallback");
+
+if (emailButton && emailFallback) {
+  emailButton.addEventListener("click", () => {
+    emailFallback.hidden = false;
+  });
+}

@@ -1,17 +1,17 @@
 # Build Project 1 — One-Page Website (Next Chapter Program)
 
 ## Summary
-First build project of the program. The task itself is straightforward (a one-page site built with AI help) — the actual thing being graded is whether Kendra stayed in control of the AI while building it, not just whether the site works.
+First build project of the program. The task itself is straightforward (a one-page site built with AI help) — the actual thing being graded is whether I stayed in control of the AI while building it, not just whether the site works.
 
 ## Spec — build exactly this, nothing extra
 - A clear headline and one-sentence description of who/what the site is for.
-- Exactly three sections of content (her choice of what fits the purpose).
-- One way to take action: a button, a link, or contact info.
+- Exactly three sections of content.
+- One way to take action (CTA): a button, a link, or contact info.
 
 ## Constraints that prove control
 - **Stay in scope** — exactly three sections, no bonus features. Scope discipline is itself the skill being tested.
 - **Explain every part** — must be able to point at any piece of the site and say what it does, in her own words.
-- **Log every prompt** — the Prompt Log is the evidence of her thinking/process.
+- **Log every prompt** — the Prompt Log is the evidence of my thinking/process.
 - **Catch one mistake** — find at least one thing the AI got wrong or did poorly, and fix it. Note it. ✅ **DONE** — actually caught three, see below.
 
 ## Grading rubric
@@ -25,7 +25,7 @@ First build project of the program. The task itself is straightforward (a one-pa
 - Day 4: build.
 - Day 5: demo-ready.
 
-## LOCKED SCOPE (confirmed by Kendra)
+## LOCKED SCOPE (confirmed)
 
 **Subject:** "Just Doing the Books" — Tax & Accounting Services, owned by Joanna Plues (Kendra's mom), Payson, AZ, since 2012.
 
@@ -42,13 +42,13 @@ First build project of the program. The task itself is straightforward (a one-pa
 - "Accepts Venmo, Cash App, Zelle" — plain text, no logos
 - PTIN circle (P03418357) and the full logo now live at the bottom of this same section (merged in deliberately to stay at exactly three sections — see prompt log, verbatim item 23)
 
-**Explicitly out of scope (scope-discipline decisions):** payment-method logos/icons (text only); a second CTA button; clickable navbar navigation tabs (added by the AI, removed by Kendra — twice).
+**Explicitly out of scope (scope-discipline decisions):** payment-method logos/icons (text only); a second CTA button; clickable navbar navigation tabs (added by the AI, removed by me — twice).
 
-**Source material:** Joanna's business card (Just Doing the Books, PTIN P03418357) — photographed and provided by Kendra.
+**Source material:** Joanna's business card (Just Doing the Books, PTIN P03418357) — photographed and company logo aslo provided.
 
-**Status:** Built in Replit, iterated through many rounds of content/styling changes, reviewed by Kendra for scope drift and mistakes. Demo-ready pending final pass.
+**Status:** Built in Replit, iterated through many rounds of content/styling changes, reviewed by builder for scope drift and mistakes. Demo-ready pending final pass. Final UI polish and code discussions on own and with Claude Code.
 
-## ✅ Caught mistakes (satisfies the "catch one mistake" constraint — three found)
+## ✅ Caught mistakes 
 
 **1. Scope creep — clickable navbar tabs (lead with this one in the demo).** The AI added clickable navigation tabs to the navbar, which was never part of the locked spec ("no bonus features"). Kendra removed them and replaced them with plain contact text (phone + email) in the same spot. This had to be caught **twice** — the tabs resurfaced after the first fix, and she caught them again. Full prompts logged in `build-project-1-prompt-log.md`, verbatim items 19 and 25.
 
