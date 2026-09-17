@@ -1,8 +1,9 @@
 # Just Doing the Books — HTML, CSS, JS
 
-![jdtb-landingpage](img/landingpageJDTB.png)
+![jdtb-landingpage](img/landingpageJDTB.png) 
 
-🚧 [Live Demo Link Coming Soon](github-pages-link)
+🖥️ [Click to view the website](https://kendrahartnett.github.io/just-doing-the-books/)
+
 
 A one-page marketing site for **Just Doing the Books**, a bookkeeping and tax service run by Joanna Plues, serving personal and small-business clients in Payson, Arizona since 2012.
 
