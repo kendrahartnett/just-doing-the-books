@@ -519,11 +519,12 @@ h2 em {
 .ptin-footer-inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+ justify-content: center;   /* was: space-between */
+  gap: 48px;  
   width: min(100% - 48px, var(--max-width));
   margin-inline: auto;
 }
+
 
 .ptin-stamp-slot {
   display: flex;
