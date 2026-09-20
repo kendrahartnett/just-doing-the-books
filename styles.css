@@ -460,7 +460,7 @@ h1 i, h2 em { color: var(--sage); font-style: italic; font-weight: 400; }
   .testimonials-head { gap: 45px; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 580px) {
   .page-width { width: min(100% - 32px, var(--max-width)); }
   .topbar { min-height: 76px; }
   .wordmark { width: 135px; height: 76px; }
