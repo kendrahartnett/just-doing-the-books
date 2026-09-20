@@ -7,69 +7,151 @@
       name="description"
       content="Personal and small business bookkeeping, tax prep, and e-filing by Joanna Plues, serving local businesses and neighbors of Payson, AZ."
     />
-    <meta name="theme-color" content="#13253d" />
+    <meta name="theme-color" content="#173b5c" />
     <title>Just Doing the Books | Payson, AZ</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="styles.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
-  
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <header class="hero" id="top">
-      <div class="topbar page-width">
+      <div class="hero-wash" aria-hidden="true"></div>
+      <nav class="topbar page-width" aria-label="Main navigation">
         <a class="wordmark" href="#top" aria-label="Just Doing the Books home">
           <img
-            src="logo-package/just-doing-the-books-logo.png"
+            src="image_1789595537654.png"
             alt="Just Doing the Books — Tax & Accounting Services"
           />
         </a>
-        <div class="navbar-contact" aria-label="Contact information">
-          <span>(928) 970-2835</span>
-          <span>justdoingthebooks@gmail.com</span>
+        <div class="nav-right">
+          <div class="navbar-contact" aria-label="Contact information">
+            <a href="tel:+19289702835">(928) 970-2835</a>
+            <a href="mailto:justdoingthebooks@gmail.com">justdoingthebooks@gmail.com</a>
+          </div>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span></span><span></span>
+            <span class="sr-only">Open navigation</span>
+          </button>
+          <div class="site-nav" id="site-nav">
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Testimonials</a>
+          </div>
         </div>
-      </div>
+      </nav>
 
       <div class="hero-inner page-width">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span></span> Payson, Arizona · Since 2012</p>
-          <h1>Local Bookkeeping <i>You Can Trust</i></h1>
+          <p class="eyebrow"><span></span> Payson, Arizona <b>•</b> Since 2012</p>
+          <h1>Local Bookkeeping<br /><i>You Can Trust</i></h1>
           <p class="hero-description">
             Personal and small business bookkeeping, tax prep, and e-filing by Joanna Plues, serving local businesses and neighbors of Payson, AZ.
           </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+            <span class="hero-note">Bookkeeping for the high country</span>
+          </div>
         </div>
+        <figure class="hero-landscape reveal">
+          <img
+            src="rimcountry.jpg"
+            alt="Pine trees overlooking the Rim Country landscape near Payson, Arizona"
+          />
+          <figcaption><span>01</span> The Rim Country, kept in view</figcaption>
+        </figure>
       </div>
-
+      <div class="hero-foot page-width">
+        <span>Tax &amp; Accounting Services</span>
+        <span class="scroll-cue"><i></i> Scroll to explore</span>
+      </div>
     </header>
 
     <main id="main-content">
       <section class="section services-section" id="services" aria-labelledby="services-title">
         <div class="section-intro reveal">
           <p class="section-kicker">01 / Services</p>
-          <h2 id="services-title">Bookkeeping<br /><em>Services</em></h2>
+          <h2 id="services-title">The details<br /><em>done right.</em></h2>
+          <p class="intro-aside">A steady hand for the numbers behind your home or business.</p>
         </div>
         <div class="services-content reveal">
-          <h3>Personal &amp; Small Business Bookkeeping</h3>
-          <p>
+          <p class="service-lead">
             Joanna offers organized and reliable bookkeeping support for individuals and small businesses, including:
           </p>
-          <ul>
-            <li>Bank statement organization and review</li>
-            <li>Profit and loss reports</li>
-            <li>Cash flow tracking and reports</li>
-            <li>Tax services and tax reports</li>
-            <li>Account preparation</li>
-            <li>General bookkeeping and financial record organization</li>
-          </ul>
+          <div class="service-list">
+            <div class="service-item"><span class="service-number">01</span><span>Bank statement organization and review</span></div>
+            <div class="service-item"><span class="service-number">02</span><span>Profit and loss reports</span></div>
+            <div class="service-item"><span class="service-number">03</span><span>Cash flow tracking and reports</span></div>
+            <div class="service-item"><span class="service-number">04</span><span>Tax services and tax reports</span></div>
+            <div class="service-item"><span class="service-number">05</span><span>Account preparation</span></div>
+            <div class="service-item"><span class="service-number">06</span><span>General bookkeeping and financial record organization</span></div>
+          </div>
+          <p class="service-signoff">A clearer picture starts with a well-kept page.</p>
         </div>
       </section>
 
+      <section class="section reach-section" id="contact" aria-labelledby="reach-title">
+        <div class="reach-panel reveal">
+          <div class="reach-copy">
+            <p class="section-kicker">02 / Have Questions?</p>
+            <h2 id="reach-title"><em>Time to Get Things Balanced</em><br />Let's connect</h2>
+            <p class="reach-intro">Bring the questions, the shoebox, or simply the feeling that it is time to get organized.</p>
+          </div>
+          <div class="reach-action">
+            <a class="email-button" href="mailto:justdoingthebooks@gmail.com">
+              <span>Contact me</span>
+              <span class="button-arrow" aria-hidden="true">↗</span>
+            </a>
+            <p>
+               <span class="contact-phone">
+                 You can also call or text<br />
+                 <a href="tel:+19289702835">(928) 970-2835</a>.
+               </span><br /><br />
+              <span class="response-note">Joanna will respond to all inquiries within 24 hours.</span>
+            </p>
+            <div class="payment-options" aria-label="Accepted payment methods">
+              <span class="payment-label">Accepts</span>
+              <div class="payment-logos">
+                <span class="payment-logo">
+                  <img src="venmo.svg" alt="" />
+                  <span>Venmo</span>
+                </span>
+                <span class="payment-logo">
+                  <img src="cashapp.svg" alt="" />
+                  <span>Cash App</span>
+                </span>
+                <span class="payment-logo">
+                  <img src="zelle.svg" alt="" />
+                  <span>Zelle</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-rule" aria-hidden="true"><span></span><span>Serving Payson &amp; the Rim Country</span><span></span></div>
+      </section>
+
+      <figure class="accounting-feature reveal">
+        <div class="accounting-feature-frame">
+          <img src="accounting.jpeg" alt="Bookkeeper reviewing financial documents beside a laptop and calculator" />
+          <figcaption>Bookkeeping, in practice.</figcaption>
+        </div>
+      </figure>
+
       <section class="section about-section" id="about" aria-labelledby="about-title">
-        <div class="about-stamp-placeholder" aria-hidden="true"></div>
+        <div class="about-stamp-placeholder" aria-hidden="true">
+          <div class="about-stamp">
+            <span>PTIN:</span>
+            <strong>P03418357</strong>
+          </div>
+        </div>
         <div class="about-copy reveal">
-          <p class="section-kicker">02 / About Just Doing the Books</p>
+          <p class="section-kicker">03 / About Just Doing the Books</p>
           <h2 id="about-title">
-            <span class="about-title-label">About</span>
-            <span>Just Doing <em>the Books</em></span>
+            <span class="about-title-label">The person behind the page</span>
+            <span>About Just Doing <em><span class="about-the">the</span> Books</em></span>
           </h2>
           <div class="about-description">
             <p>
@@ -82,56 +164,63 @@
               She treats every business and personal bookkeeping need with the same care and respect she would give her own, helping clients stay organized, keep track of their finances, and feel more confident about their financial records.
             </p>
           </div>
+          <div class="about-signature">Joanna Plues <span>— your local bookkeeper</span></div>
         </div>
       </section>
 
-      <section class="section reach-section" id="reach" aria-labelledby="reach-title">
-        <div class="reach-panel reveal">
+      <section class="section testimonials-section" id="testimonials" aria-labelledby="testimonials-title">
+        <div class="testimonials-head reveal">
           <div>
-            <p class="section-kicker">03 / Have Questions?</p>
-            <h2 id="reach-title"><em>Time to Get Things Balanced</em><br />Let's connect</h2>
+            <p class="section-kicker">04 / Client Notes</p>
+            <h2 id="testimonials-title">Good books.<br /><em>Good company.</em></h2>
           </div>
-
-
-          <div class="reach-action">
-            <a class="email-button" href="mailto:justdoingthebooks@gmail.com" id="email-cta">
-              <span>Email Joanna Right now</span>
-              <span class="button-arrow" aria-hidden="true">↗</span>
-            </a>
-
-                        <!-- Hidden until the button is clicked -->
-<p id="email-fallback" class="email-fallback" hidden>
-  Opening your email app — if nothing happens, reach Joanna at
-  <a href="mailto:justdoingthebooks@gmail.com">justdoingthebooks@gmail.com</a>.
-</p>
-
-
-
-            <p class="contact-alt">
-              You can also call or text<br />
-              (928) 970-2835.<br />
-              Joanna will respond to all inquiries within 24 hours.
-            </p>
-            <p class="payment-note">Accepts Venmo, Cash App, Zelle</p>
-          </div>
+          <p class="testimonials-summary">
+            A few words from happy clients who feel more organized, prepared, and confident with Just Doing the Books.
+          </p>
         </div>
-        <div class="ptin-footer">
-          <div class="ptin-footer-inner">
-            <div class="ptin-stamp-slot">
-              <div class="about-stamp reveal" aria-label="PTIN P03418357">
-                <span>PTIN:</span>
-                <strong>P03418357</strong>
-              </div>
-            </div>
-            <img
-              class="ptin-logo reveal"
-                src="logo-package/just-doing-the-books-logo.png"
-              alt="Just Doing the Books — Tax & Accounting Services"
-            />
-          </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <div class="rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              Just Doing the Books made getting my books organized feel simple and manageable. Joanna is patient, thorough, and always leaves me feeling confident about my numbers.
+            </blockquote>
+            <cite>Local bookkeeping client</cite>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              I’m so happy with the help I received. My records are finally in order, and tax time felt much less stressful. I would recommend Just Doing the Books to anyone who needs a steady hand.
+            </blockquote>
+            <cite>Small business client</cite>
+          </article>
+          <article class="testimonial-card reveal">
+            <div class="rating" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              Joanna took the time to answer my questions and get my taxes complete without making me feel overwhelmed. I’m grateful to have someone so reliable nearby.
+            </blockquote>
+            <cite>Payson client</cite>
+          </article>
         </div>
+      </section>
+
+      <section class="closing-cta reveal" aria-labelledby="closing-cta-title">
+        <h2 id="closing-cta-title">Don't wait,<br /><em>contact today</em></h2>
       </section>
     </main>
 
+    <footer class="site-footer">
+      <div class="page-width footer-inner">
+        <img
+          class="ptin-logo"
+          src="image_1789595537654.png"
+          alt="Just Doing the Books — Tax & Accounting Services"
+        />
+        <div>
+          <span class="footer-label">Tax &amp; Accounting Services</span>
+          <a href="mailto:justdoingthebooks@gmail.com">justdoingthebooks@gmail.com</a>
+        </div>
+        <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
   </body>
 </html>

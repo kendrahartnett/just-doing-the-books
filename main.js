@@ -1,41 +1,48 @@
-// Intersection Observer for reveal animations
-
-// Select all elements with the class "reveal"
 const revealItems = document.querySelectorAll(".reveal");
+const navLinks = document.querySelectorAll(".site-nav a");
+const sections = document.querySelectorAll("main section[id]");
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector(".site-nav");
 
-// Create a new IntersectionObserver instance, which will observe when elements intersect 
-// with the viewport
 const revealObserver = new IntersectionObserver(
-    // Callback function that runs when an observed element intersects with the viewport
   (entries, observer) => {
-    // Loop through each entry (observed element)
     entries.forEach((entry) => {
-        // If the element is not intersecting, do nothing and return
       if (!entry.isIntersecting) return;
-      // If the element is intersecting, add the "is-visible" class to it
       entry.target.classList.add("is-visible");
-          console.log(entry.target)
-     
-      // Stop observing the element after it has become visible
       observer.unobserve(entry.target);
-
-   
     });
   },
-  
   { threshold: 0.12 }
 );
-// Observe each reveal item with the IntersectionObserver 
+
 revealItems.forEach((item) => revealObserver.observe(item));
 
+const activeSectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((link) => {
+        link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+      });
+    });
+  },
+  { rootMargin: "-35% 0px -55% 0px" }
+);
 
-// Show a fallback message after the email button is clicked, in case
-// the visitor's device has no email app to open the mailto: link.
-const emailButton = document.getElementById("email-cta");
-const emailFallback = document.getElementById("email-fallback");
+sections.forEach((section) => activeSectionObserver.observe(section));
 
-if (emailButton && emailFallback) {
-  emailButton.addEventListener("click", () => {
-    emailFallback.hidden = false;
+menuToggle?.addEventListener("click", () => {
+  const isOpen = siteNav.classList.toggle("is-open");
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    siteNav.classList.remove("is-open");
+    menuToggle?.setAttribute("aria-expanded", "false");
   });
-}
+});
+
+document.querySelector(".back-to-top")?.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
