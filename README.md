@@ -1,6 +1,6 @@
 # Just Doing the Books — HTML, CSS, JS
 
-![jdtb-landingpage](img/landingpageJDTB.png) 
+![jdtb-landingpage](img/newpage.png) 
 
 🖥️ [Click to view the website](https://kendrahartnett.github.io/just-doing-the-books/)
 
